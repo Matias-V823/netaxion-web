@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+
+@theme {
+    --font-family-general: 'general', sans-serif;
+    --font-family-robert-medium: 'robert-medium', sans-serif;
+    --font-family-robert-regular: 'robert-regular', sans-serif;
+    --font-family-poppins: 'poppins', sans-serif;
+    --font-family-zentry-regular: 'zentry-regular', sans-serif;
+    --ease-custom: cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+
+
+body {
+    @apply  bg-gradient-to-br font-family-poppins from-slate-950 via-slate-900 to-slate-950 text-zinc-50 relative min-h-screen overflow-x-hidden font-bold;
+}
+
+
+
+.nav-hover-btn {
+    @apply relative ms-10 font-family-general text-xs uppercase after:absolute after:-bottom-0.5 after:left-0 after:h-px after:w-full after:origin-bottom-right after:scale-x-0 after:bg-neutral-800 after:transition-transform after:duration-300 after:ease-custom hover:after:origin-bottom-left hover:after:scale-x-100 dark:after:bg-white cursor-pointer;
+}
+
+.floating-nav {
+    @apply bg-transparent rounded-lg border ;
+    background-color: rgba(255, 255, 255, 0.03); 
+    backdrop-filter: blur(70px); 
+    -webkit-backdrop-filter: blur(12px); 
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
+    border-color: rgba(255, 255, 255, 0.3); 
+}
+
+.absolute-center {
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+}
+
+.flex-center {
+    @apply flex justify-center items-center;
+}
+
+
+
+
+/* Fuentes personalizadas */
+
+@font-face {
+  font-family: 'general';
+  src: url('/fonts/general.woff2') format('woff2');
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robert-medium';
+  src: url('/fonts/robert-medium.woff2') format('woff2');
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robert-regular';
+  src: url('/fonts/robert-regular.woff2') format('woff2');
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "poppins";
+  src: url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "zentry-regular";
+  src: url('/fonts/zentry-regular.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-out forwards;
+}
+
+.animate-fade-in-delay {
+  animation: fade-in 1s ease-out 0.3s forwards;
+  opacity: 0;
+}
+
+.animate-fade-in-delay-2 {
+  animation: fade-in 1s ease-out 0.6s forwards;
+  opacity: 0;
+}
+
