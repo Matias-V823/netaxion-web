@@ -2,7 +2,7 @@ import { FaGlobe, FaTwitter, FaInstagram, FaLinkedin, FaBriefcase } from 'react-
 
 const Footer = () => {
     return (
-        <footer className="bg-zinc-950 py-10 mt-10">
+        <footer className="bg-zinc-950 py-10">
             <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
 
                 <div>
