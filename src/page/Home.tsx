@@ -4,6 +4,7 @@ import CarrouselCustomers from "../components/CarrouselCustomers";
 import Navbar from "../components/Navbar";
 import Presentation from "../components/Presentation";
 import Footer from "../components/Footer";
+import ContactHome from "../components/ContactHome";
 
 
 const Home = () => {
@@ -15,9 +16,7 @@ const Home = () => {
         <AboutInfo />
         <Presentation />
         <CarrouselCustomers />
-        {/* <div className="min-h-screen">
-
-        </div> */}
+        <ContactHome />
       </main>
       <Footer />
     </div>
