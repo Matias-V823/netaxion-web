@@ -17,7 +17,7 @@ const images = [
 
 const CarrouselCustomers: React.FC = () => {
   return (
-    <div className="h-[50rem] flex flex-col bg-white py-20 rounded-2xl">
+    <div className="h-[50rem] flex flex-col bg-white py-20">
       <div>
         <h2 className="text-4xl text-slate-600 font-extrabold text-start px-8  mb-10">Nuestros principales Clientes</h2>
       </div>
