@@ -22,7 +22,7 @@ const Presentation = () => {
               <h1 className="text-3xl font-extrabold text-white drop-shadow-lg">
                 Descubre más sobre nuestros proyectos
               </h1>
-              <p className="text-sm text-blue-100 leading-relaxed font-light">
+              <p className="text-sm text-slate-300 leading-relaxed font-light">
                 Tenemos un equipo colaborativo que busca permanentemente la
                 excelencia, innovación y la mejora continua del Sistema de Gestión
                 de Calidad mediante la capacitación, certificación y
@@ -35,7 +35,7 @@ const Presentation = () => {
             </div>
           </div>
 
-          <div className="col-span-4 border bg-sky-600/90 border-gray-800 rounded-2xl min-h-[10rem] shadow-2xl p-8 text-white flex flex-col justify-center relative overflow-hidden">
+          <div className="col-span-4 border bg-sky-600/90 border-gray-800 rounded-2xl min-h-[10rem] shadow-2xl p-8 text-white flex flex-col justify-center relative overflow-hidden font-family-general">
             <div className="flex flex-row items-center text-center gap-5">
               <h2 className="text-9xl font-family-zentry-regular font-extrabold text-zinc-950 drop-shadow-md flex items-center">
                 11 <span className="text-5xl ml-1">+</span>
@@ -366,7 +366,7 @@ const Presentation = () => {
               </defs>
             </svg>
           </div>
-          <div className="bg-orange-400/80 col-span-8 rounded-lg p-4">
+          <div className="bg-orange-400/80 col-span-8 rounded-lg p-4 font-family-general">
             <div className="flex flex-row items-center gap-4">
               <img
                 src="/img/hero-4.png"

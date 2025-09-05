@@ -14,10 +14,10 @@ const Home = () => {
         <Hero />
         <AboutInfo />
         <Presentation />
-        <div className="min-h-screen">
+        <CarrouselCustomers />
+        {/* <div className="min-h-screen">
 
-        </div>
-        {/* <CarrouselCustomers /> */}
+        </div> */}
       </main>
       <Footer />
     </div>
