@@ -18,9 +18,13 @@ const images = [
 const CarrouselCustomers: React.FC = () => {
   return (
     <div className="h-[50rem] flex flex-col bg-white py-20">
-      <div>
-        <h2 className="text-4xl text-slate-600 font-extrabold text-start px-8  mb-10">Nuestros principales Clientes</h2>
+      <div className="text-center px-8 mb-10">
+        <h2 className="text-5xl text-zinc-800 mb-4">Nuestros principales Clientes</h2>
+        <p className="text-lg font-light text-gray-700">
+          Empresas que confían en nuestras soluciones tecnológicas.
+        </p>
       </div>
+
       <div className='flex justify-center mx-auto p-14 w-72'>
         <img src="img/solarwind.jpg" alt="" className='w-64 rounded-tl-2xl' />
         <img src="img/ipswitch.jpg" alt="" className='w-64' />
@@ -57,8 +61,8 @@ const CarrouselCustomers: React.FC = () => {
       </div>
 
       <div className="px-8 mt-20 flex justify-end">
-        <div className="max-w-[500px] text-right border-t border-b border-slate-300 py-6">
-          <p className="text-xl text-slate-600 font-light">
+        <div className="max-w-[320px] text-right border-t border-b border-slate-300 py-6">
+          <p className="text-base text-gray-700 font-light">
             Trabajamos junto a empresas líderes del sector, entregando soluciones confiables y a medida.
           </p>
         </div>

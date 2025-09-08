@@ -7,13 +7,15 @@
     --font-family-robert-regular: 'robert-regular', sans-serif;
     --font-family-poppins: 'poppins', sans-serif;
     --font-family-zentry-regular: 'zentry-regular', sans-serif;
+    --font-family-open-sans: 'open-sans', sans-serif;
+    --font-family-montserrat: 'Montserrat', sans-serif;
     --ease-custom: cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 
 
 
 body {
-    @apply  bg-gradient-to-br font-family-poppins from-slate-950 via-slate-900 to-slate-950 text-zinc-50 relative min-h-screen overflow-x-hidden font-bold;
+    @apply  relative min-h-screen overflow-x-hidden font-bold;
 }
 
 
@@ -80,6 +82,19 @@ body {
   font-style: normal;
 }
 
+@font-face {
+  font-family: "open-sans";
+  src: url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
 
 
 @keyframes fade-in {

@@ -4,18 +4,18 @@ const Navbar = () => {
       <nav className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         <div className="flex items-center space-x-2">
           <img
-            src="/img/logo.png"
+            src="/img/logo-white.png"
             alt="Logo"
-            className="h-7 w-auto"
+            className="h-10 w-auto"
           />
         </div>
 
-        <div className="hidden md:flex items-center space-x-8">
-          <a href="#product" className="text-gray-300 hover:text-white transition">Inicio</a>
-          <a href="#teams" className="text-gray-300 hover:text-white transition">Política de Calidad</a>
-          <a href="#resources" className="text-gray-300 hover:text-white transition">Alcance</a>
-          <a href="#community" className="text-gray-300 hover:text-white transition">Nosotros</a>
-          <a href="#pricing" className="text-gray-300 hover:text-white transition">Servicios</a>
+        <div className="hidden md:flex items-center space-x-8 text-sm font-medium">
+          <a href="#" className="text-gray-600 hover:text-gray-800 transition">Inicio</a>
+          <a href="#" className="text-gray-600 hover:text-gray-800 transition">Política de Calidad</a>
+          <a href="#" className="text-gray-600 hover:text-gray-800 transition">Alcance</a>
+          <a href="#" className="text-gray-600 hover:text-gray-800 transition">Nosotros</a>
+          <a href="#" className="text-gray-600 hover:text-gray-800 transition">Servicios</a>
         </div>
 
         <div className="flex items-center space-x-4">
